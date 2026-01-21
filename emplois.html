@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrières - Construction 4 Frères</title>
+    <meta name="description" content="Rejoignez l'équipe de Construction 4 Frères. Postulez dès maintenant pour faire partie de notre famille.">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* STYLES SPÉCIFIQUES PAGE EMPLOIS */
+        .emplois-hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .emplois-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .emplois-content {
+            padding: 80px 0;
+        }
+        
+        .emplois-intro {
+            max-width: 800px;
+            margin: 0 auto 60px;
+            text-align: center;
+        }
+        
+        .candidature-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .option-card {
+            background: var(--bg-light);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .option-card h3 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .option-card p {
+            margin-bottom: 30px;
+            color: var(--text-light);
+        }
+        
+        .formulaire-section {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .formulaire-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .form-group label .required {
+            color: #e74c3c;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .form-note {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+        
+        .form-disclaimer {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        
+        .btn-submit {
+            width: 100%;
+            padding: 15px;
+            background: var(--secondary-color);
+            color: var(--primary-color);
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-submit:hover {
+            background: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .candidature-options {
+                grid-template-columns: 1fr;
+            }
+            
+            .formulaire-section {
+                padding: 30px 20px;
+            }
+            
+            .emplois-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- =============================================
+         NAVIGATION
+    ============================================= -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Construction 4 Frères Inc." class="logo-image"> 
+                     
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="index.html#histoire">Notre Histoire</a></li>
+                    <li><a href="emplois.html" class="active">Carrières</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =============================================
+         HERO EMPLOIS
+    ============================================= -->
+    <section class="emplois-hero">
+        <div class="container">
+            <h1 data-aos="fade-up">Dépôt de candidature</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Rejoignez une équipe passionnée et dynamique</p>
+        </div>
+    </section>
+
+    <!-- =============================================
+         CONTENU EMPLOIS
+    ============================================= -->
+    <section class="emplois-content">
+        <div class="container">
+            
+            <!-- INTRO -->
+            <div class="emplois-intro" data-aos="fade-up">
+                <h2>Faites partie de notre famille</h2>
+                <p>Nous sommes toujours à la recherche de talents passionnés pour rejoindre notre équipe. Si vous cherchez un environnement de travail stimulant où la qualité et le professionnalisme sont valorisés, Construction 4 Frères est l'endroit idéal pour vous.</p>
+            </div>
+
+            <!-- OPTIONS DE CANDIDATURE -->
+            <div class="candidature-options">
+                
+                <!-- OPTION 1: FORMULAIRE -->
+                <div class="option-card" data-aos="fade-right">
+                    <h3>📝 Option 1</h3>
+                    <h4>Remplir le formulaire en ligne</h4>
+                    <p>Utilisez notre formulaire ci-dessous pour nous faire parvenir votre candidature rapidement.</p>
+                    <a href="#formulaire" class="btn-secondary">Remplir le formulaire</a>
+                </div>
+
+                <!-- OPTION 2: EMAIL -->
+                <div class="option-card" data-aos="fade-left">
+                    <h3>📧 Option 2</h3>
+                    <h4>Envoyer par email</h4>
+                    <p>Envoyez-nous directement votre CV accompagné d'une lettre de présentation.</p>
+                    <a href="mailto:info@construction4freres.com?subject=Dépôt de ma candidature" class="btn-primary">Envoyer par email</a>
+                </div>
+
+            </div>
+
+            <!-- FORMULAIRE DE CANDIDATURE -->
+            <div class="formulaire-section" id="formulaire" data-aos="fade-up">
+                <h2>Formulaire de candidature</h2>
+                
+                <!-- DISCLAIMER -->
+                <div class="form-disclaimer">
+                    <strong>⚠️ Note importante:</strong> En soumettant ce formulaire, vous acceptez que vos informations soient utilisées dans le cadre de votre candidature. Nous ne sommes pas responsables des éventuelles fuites de données. Les informations que vous partagez sont sous votre propre responsabilité.
+                </div>
+
+                <!-- FORMULAIRE - MODIFIER ACTION SI NÉCESSAIRE -->
+                <form name="candidature" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return handleContactForm(event)">
+                    
+                    <!-- Champ anti-spam caché -->
+                    <input type="hidden" name="form-name" value="candidature">
+                    <p style="display:none;">
+                        <label>Ne pas remplir: <input name="bot-field" /></label>
+                    </p>
+
+                    <!-- NOM COMPLET -->
+                    <div class="form-group">
+                        <label for="nom">
+                            Nom complet <span class="required">*</span>
+                        </label>
+                        <input type="text" id="nom" name="nom" required placeholder="Votre nom complet">
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="form-group">
+                        <label for="email">
+                            Adresse email <span class="required">*</span>
+                        </label>
+                        <input type="email" id="email" name="email" required placeholder="votre.email@example.com">
+                    </div>
+
+                    <!-- TÉLÉPHONE -->
+                    <div class="form-group">
+                        <label for="telephone">
+                            Numéro de téléphone <span class="required">*</span>
+                        </label>
+                        <input type="tel" id="telephone" name="telephone" required placeholder="(514) 123-4567">
+                    </div>
+
+                    <!-- POSTE SOUHAITÉ -->
+                    <div class="form-group">
+                        <label for="poste">
+                            Poste souhaité
+                        </label>
+                        <input type="text" id="poste" name="poste" placeholder="Ex: Charpentier, Électricien, Manoeuvre, etc.">
+                    </div>
+
+                    <!-- MESSAGE / PRÉSENTATION -->
+                    <div class="form-group">
+                        <label for="message">
+                            Message / Présentation
+                        </label>
+                        <textarea id="message" name="message" placeholder="Parlez-nous de votre expérience, vos qualifications et pourquoi vous souhaitez rejoindre Construction 4 Frères..."></textarea>
+                        <p class="form-note">
+                            💡 Astuce: Vous pouvez aussi nous envoyer votre CV directement à <a href="mailto:info@construction4freres.com">info@construction4freres.com</a>
+                        </p>
+                    </div>
+
+                    <!-- BOUTON SUBMIT -->
+                    <button type="submit" class="btn-submit">Soumettre ma candidature</button>
+
+                </form>
+
+                <!-- REMERCIEMENT -->
+                <div style="margin-top: 30px; text-align: center; color: var(--text-light);">
+                    <p>Nous vous remercions sincèrement de l'intérêt que vous portez à notre entreprise.</p>
+                    <p><strong>Veuillez noter que seuls les candidats retenus seront contactés.</strong></p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =============================================
+         FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Construction 4 Frères</h3>
+                    <p>L'expertise d'une famille, la qualité d'une entreprise.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="emplois.html">Carrières</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>438-401-5659</p>
+                    <p>150 Côte Saint-Nicolas</p>
+                    <p>St-Colombant, Qc</p>
+                    <p>J5K 1M2</p>
+                    <p>Email: <a href="mailto:info@construction4freres.com">info@construction4freres.com</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Construction 4 Frères. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

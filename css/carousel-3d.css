@@ -1,0 +1,300 @@
+/* =============================================
+   CAROUSEL 3D - Construction 4 Frères
+   Fichier CSS séparé pour le slideshow 3D
+============================================= */
+
+.carousel-3d-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-3d-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 107, 0, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.carousel-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.carousel-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.carousel-header h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.carousel-header p {
+    color: #bbb;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* =============================================
+   CAROUSEL 3D WRAPPER
+============================================= */
+.carousel-3d-wrapper {
+    position: relative;
+    height: 500px;
+    perspective: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-3d {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =============================================
+   CAROUSEL CARDS
+============================================= */
+.carousel-card {
+    position: absolute;
+    width: 450px;
+    height: 350px;
+    left: 50%;
+    top: 50%;
+    transform-origin: center center;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.carousel-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Card overlay */
+.carousel-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-card:hover::after {
+    opacity: 1;
+}
+
+/* Active card (center) */
+.carousel-card.active {
+    z-index: 10;
+    opacity: 1;
+    filter: brightness(1.1);
+}
+
+/* Cards on the sides */
+.carousel-card:not(.active) {
+    opacity: 0.6;
+    filter: brightness(0.7);
+}
+
+/* =============================================
+   NAVIGATION ARROWS
+============================================= */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 107, 0, 0.9);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(255, 107, 0, 0.3);
+}
+
+.carousel-nav:hover {
+    background: rgba(255, 107, 0, 1);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 8px 30px rgba(255, 107, 0, 0.5);
+}
+
+.carousel-nav:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.carousel-nav.prev {
+    left: 20px;
+}
+
+.carousel-nav.next {
+    right: 20px;
+}
+
+.carousel-nav svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+/* =============================================
+   PROGRESS INDICATORS
+============================================= */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.carousel-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicator:hover {
+    background: rgba(255, 107, 0, 0.5);
+    transform: scale(1.2);
+}
+
+.carousel-indicator.active {
+    background: #ff6b00;
+    border-color: #fff;
+    transform: scale(1.3);
+}
+
+/* =============================================
+   COUNTER
+============================================= */
+.carousel-counter {
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.carousel-counter .current {
+    color: #ff6b00;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.carousel-counter .total {
+    color: #888;
+}
+
+/* =============================================
+   MOBILE RESPONSIVE
+============================================= */
+@media (max-width: 768px) {
+    .carousel-3d-section {
+        padding: 60px 0;
+    }
+
+    .carousel-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-header p {
+        font-size: 1rem;
+    }
+
+    .carousel-3d-wrapper {
+        height: 400px;
+        perspective: 1000px;
+    }
+
+    .carousel-card {
+        width: 320px;
+        height: 240px;
+    }
+
+    .carousel-nav {
+        width: 50px;
+        height: 50px;
+    }
+
+    .carousel-nav.prev {
+        left: 10px;
+    }
+
+    .carousel-nav.next {
+        right: 10px;
+    }
+
+    .carousel-nav svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Hide side cards on mobile for better performance */
+    .carousel-card:not(.active) {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-card {
+        width: 280px;
+        height: 210px;
+    }
+
+    .carousel-nav {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* =============================================
+   TOUCH GESTURES SUPPORT
+============================================= */
+.carousel-3d-wrapper.grabbing {
+    cursor: grabbing;
+}
+
+.carousel-3d-wrapper.grabbing .carousel-card {
+    cursor: grabbing;
+}

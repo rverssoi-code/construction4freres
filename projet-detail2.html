@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail du Projet - Construction 4 Frères</title>
+    <meta name="description" content="Détails complets du projet de construction ou rénovation.">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Lightbox CSS - AJOUTE CETTE LIGNE ↓ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    
+    <style>
+        /* STYLES SPÉCIFIQUES À LA PAGE DÉTAIL PROJET */
+        .projet-detail-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('images/reno/Front_house.jpg') center 80%/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .projet-detail-content {
+            padding: 80px 0;
+        }
+        
+        .projet-info-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+        
+        .projet-description h2 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .projet-description p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .projet-specs {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        
+        .projet-specs h3 {
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+        
+        .spec-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .spec-item:last-child {
+            border-bottom: none;
+        }
+        
+        .spec-label {
+            font-weight: 600;
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .spec-value {
+            color: var(--text-light);
+        }
+        
+        .projet-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 60px 0;
+        }
+        
+        .gallery-item {
+            height: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        @media (max-width: 768px) {
+            .projet-info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- =============================================
+         NAVIGATION
+    ============================================= -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Construction 4 Frères Inc." class="logo-image"> 
+                    
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="projets.html" class="active">Projets</a></li>
+                    <li><a href="index.html#histoire">Notre Histoire</a></li>
+                    <li><a href="emplois.html">Carrières</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =============================================
+         HERO PROJET - MODIFIER LE TITRE ICI
+    ============================================= -->
+    <section class="projet-detail-hero">
+        <div class="container">
+            <h1 data-aos="fade-up" id="projetTitle">Rénovation résidentielle: : nos solutions personnalisées</h1>
+        </div>
+    </section>
+
+    <!-- =============================================
+         CONTENU DÉTAILLÉ - MODIFIER ICI
+    ============================================= -->
+    <section class="projet-detail-content">
+        <div class="container">
+            
+            <div class="projet-info-grid">
+                
+                <!-- DESCRIPTION COMPLÈTE -->
+                <div class="projet-description" data-aos="fade-right">
+                    <h2>Un projet d'envergure formidable</h2>
+                    
+                    <!-- MODIFIER LE TEXTE ICI -->
+                    <p>
+                        <b>La rénovation résidentielle</b> est un sujet qui touche de nombreux propriétaires. Que vous souhaitiez moderniser votre maison, améliorer son efficacité énergétique ou simplement lui donner un nouveau look, il existe des solutions adaptées à chaque besoin. Dans cet article, nous allons explorer différentes options de rénovation et comment elles peuvent transformer votre espace de vie.
+                    </p>
+                    
+                    <p>
+                        La première étape dans tout projet de rénovation est de définir vos objectifs. Que voulez-vous accomplir ? Voulez-vous créer un espace plus fonctionnel, augmenter la valeur de votre propriété ou simplement rafraîchir l'apparence de votre maison ? En ayant une vision claire, vous pouvez mieux planifier votre projet.
+                    </p>
+
+                    <h3>Évaluation de l'espace</h3>
+                    <p>Avant de commencer les travaux, il est essentiel d'évaluer l'espace que vous souhaitez rénover. Cela inclut :
+                        <ul>
+                        <li><b>Mesurer les dimensions :</b> Prenez des mesures précises de chaque pièce. Cela vous aidera à planifier l'aménagement et à choisir les matériaux appropriés.</li>
+                        <li><b>Identifier les problèmes :</b> Recherchez des problèmes structurels, comme des fuites ou des fissures. Ces problèmes doivent être résolus avant de commencer la rénovation.</li>
+                        <li><b>Déterminer le style :</b> Pensez au style que vous souhaitez donner à votre maison. Préférez-vous un look moderne, traditionnel ou éclectique ? Cela influencera vos choix de matériaux et de couleurs.</li>
+                        </ul>        
+                         </p>
+                        
+                    <h3>Choix des matériaux</h3>
+                    <p>
+                        Le choix des matériaux est crucial dans toute rénovation. Voici quelques options populaires :
+                        <ul>
+                        <li><b>Bois :</b> Le bois est un matériau chaleureux et intemporel. Il peut être utilisé pour les planchers, les meubles et même les murs.</li>
+                        <li><b>Pierre :</b> La pierre naturelle apporte une touche d'élégance. Elle est idéale pour les comptoirs de cuisine ou les revêtements de sol.</li>
+                        <li><b>Métal :</b>Métal : Les éléments en métal, comme l'acier inoxydable, sont modernes et durables. Ils sont souvent utilisés dans les cuisines contemporaines.</li>
+                        <li><b>Peinture :</b>Peinture : Ne sous-estimez pas le pouvoir de la peinture. Un nouveau coup de peinture peut transformer une pièce en un rien de temps.</li>
+                        </ul>
+                    </p>
+                    <h3>Aménagement de l'espace</h3>
+                    <p>L'aménagement de l'espace est une autre étape clé. Pensez à la façon dont vous utilisez chaque pièce. Voici quelques conseils :
+
+                    <ul>
+                    <li><b>Optimiser l'espace :</b> Utilisez des meubles multifonctionnels pour maximiser l'espace. Par exemple, un canapé-lit peut être parfait pour les petites pièces.</li>
+                    <li><b>Créer des zones :</b> Dans les espaces ouverts, créez des zones distinctes pour différentes activités. Utilisez des tapis ou des meubles pour délimiter ces zones.</li>
+                    <li><b>Éclairage :</b> L'éclairage joue un rôle essentiel dans l'ambiance d'une pièce. Combinez l'éclairage naturel et artificiel pour créer un espace accueillant.</li>
+                    </ul>
+                    </p>
+                    <h3>Solutions écologiques</h3>
+                    <p>
+                        De plus en plus de propriétaires optent pour des solutions écologiques lors de leurs rénovations. Voici quelques idées :
+                        <ul>
+                        <li><b>Matériaux durables :</b> Choisissez des matériaux recyclés ou durables. Cela réduit l'impact environnemental de votre projet.</li>
+                        <li><b>Efficacité énergétique :</b> Investissez dans des appareils écoénergétiques et des fenêtres à double vitrage. Cela peut réduire vos factures d'énergie à long terme.</li>
+                        <li><b>Jardinage durable :</b> Si vous rénovez l'extérieur, pensez à des jardins qui nécessitent peu d'eau. Les plantes locales sont souvent plus résistantes et nécessitent moins d'entretien.</li>
+                        </ul>
+                        </p>
+                        <h3>Budget et planification</h3>
+                        <p>Un bon budget est essentiel pour toute rénovation. Voici quelques étapes pour vous aider à planifier :
+                            <ul>
+                            <li>Établir un budget : Déterminez combien vous êtes prêt à dépenser. Incluez tous les coûts, y compris les matériaux, la main-d'œuvre et les imprévus.</li>
+                            <li>Prioriser les projets : Si votre budget est limité, priorisez les projets qui auront le plus grand impact. Parfois, de petites améliorations peuvent faire une grande différence.</li>
+                            <li>Planifier le temps : Établissez un calendrier réaliste pour votre projet. Cela vous aidera à rester organisé et à éviter les retards.</li>
+                            </ul>
+                        </p>
+
+                        <h3>Travailler avec des professionnels</h3>
+                        <p>Si vous n'êtes pas sûr de vos compétences en rénovation, il peut être judicieux de faire appel à des professionnels. Voici quelques avantages :
+                            <ul>
+                            <li>Expertise : Les professionnels ont l'expérience nécessaire pour gérer des projets complexes. Ils peuvent vous conseiller sur les meilleures pratiques et les matériaux.</li>
+                            <li>Gain de temps : Engager des experts peut vous faire gagner du temps. Ils savent comment travailler efficacement et respecter les délais.</li>
+                            <li>Qualité du travail : Les professionnels garantissent souvent un travail de qualité. Cela peut vous éviter des problèmes futurs.</li>
+                            </ul>
+                        </p>
+
+                        <h3>Suivi et entretien</h3>
+                        <p>
+                            <ul>
+                            <li>Inspecter régulièrement : Vérifiez régulièrement l'état de votre maison. Cela vous aidera à détecter les problèmes avant qu'ils ne deviennent graves.</li>
+                             <li>Entretenir les matériaux : Suivez les recommandations d'entretien pour les matériaux que vous avez choisis. Cela prolongera leur durée de vie.</li>
+                            <li>Rester à jour : Les tendances en matière de rénovation évoluent. Restez informé des nouvelles idées et technologies pour garder votre maison moderne.</li>
+                            </ul>
+                        </p>
+
+                        <h3>Témoignages de clients</h3>
+                        <p>
+                            <ul>
+                            <li>Marie, propriétaire d'une maison ancienne : "J'ai toujours voulu rénover ma maison, mais je ne savais pas par où commencer. Grâce à l'équipe, j'ai pu moderniser ma cuisine tout en préservant son charme d'origine."</li>
+                             <li>Jean, propriétaire d'un appartement : "L'espace de mon appartement était mal utilisé. L'équipe m'a aidé à repenser l'aménagement, et maintenant, c'est un endroit où j'adore passer du temps."</li>
+                            </ul>
+                        </p>
+
+                        <h3>L'importance de la personnalisation</h3>
+                        <p>Chaque maison est unique, tout comme les besoins de ses propriétaires. C'est pourquoi la personnalisation est essentielle dans tout projet de rénovation. Voici quelques raisons pour lesquelles cela compte :
+                            <ul>
+                            <li><b>Répondre aux besoins spécifiques :</b> Chaque famille a des besoins différents. Une solution personnalisée garantit que votre espace répond à vos attentes.</li>
+                             <li><b>Créer un espace qui vous ressemble :</b> Votre maison doit refléter votre personnalité. La personnalisation vous permet de choisir des couleurs, des matériaux et des styles qui vous plaisent.</li>
+                            <li><b>Augmenter la valeur de votre propriété :</b> Une rénovation bien pensée et personnalisée peut augmenter la valeur de votre maison. Cela peut être un atout si vous envisagez de vendre à l'avenir.</li>
+                            </ul>
+                        </p><br>
+
+                        <h3><strong>Conclusion inspirante</strong></h3>
+                        <p>
+                           La rénovation résidentielle est une aventure passionnante qui peut transformer votre maison en un espace qui vous ressemble. Que vous choisissiez de petits changements ou une transformation complète, chaque projet est une occasion de créer quelque chose de spécial. En planifiant soigneusement, en choisissant les bons matériaux et en travaillant avec des professionnels, vous pouvez réaliser la maison de vos rêves.
+                        </p>
+
+                </div>
+                
+                <!-- SPÉCIFICATIONS - MODIFIER ICI -->
+                <div class="projet-specs" data-aos="fade-left">
+                    <h3>Spécifications</h3>
+                    
+                    <div class="spec-item">
+                        <span class="spec-label">Client</span>
+                        <span class="spec-value">M.Panfilo</span>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <span class="spec-label">Type de projet</span>
+                        <span class="spec-value">Rénovation residentielle</span>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <span class="spec-label">Durée</span>
+                        <span class="spec-value">Complété</span>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <span class="spec-label">Surface</span>
+                        <span class="spec-value">2,200 pi²</span>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <span class="spec-label">Statut</span>
+                        <span class="spec-value">Complété</span>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <span class="spec-label">Services</span>
+                        <span class="spec-value">
+                            • Démolition<br>
+                            • Menuiserie<br>
+                            • Charpente<br>
+                            • Toiture<br>
+                            • Finitions
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- =============================================
+                 GALERIE PHOTOS - AJOUTER/MODIFIER ICI
+            ============================================= -->
+            <!-- =============================================
+            GALERIE PHOTOS - MAINTENANT CLIQUABLE!
+            ============================================= -->
+            <h2 class="section-title" data-aos="fade-up">Galerie photos</h2>
+
+            <div class="projet-gallery">
+            <!-- PHOTO 1 - CLIQUABLE -->
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+            <a href="images/Reno/maison1.jfif" data-lightbox="projet-reno" data-title="Vue d'ensemble de la maison">
+            <img src="images/Reno/maison1.jfif" alt="Vue d'ensemble">
+             </a>
+            </div>
+    
+            <!-- PHOTO 2 - CLIQUABLE -->
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+             <a href="images/Reno/garage.jfif" data-lightbox="projet-reno" data-title="Garage - Vue extérieure">
+            <img src="images/Reno/garage.jfif" alt="Vue d'ensemble2">
+             </a>
+            </div>
+    
+            <!-- PHOTO 3 - CLIQUABLE -->
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+            <a href="images/Reno/garage2.jfif" data-lightbox="projet-reno" data-title="Garage - Vue secondaire">
+            <img src="images/Reno/garage2.jfif" alt="Vue d'ensemble3">
+            </a>
+            </div>
+
+            <!-- PHOTO 4 - CLIQUABLE -->
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+            <a href="images/Reno/maison2.jfif" data-lightbox="projet-reno" data-title="Maison - Vue détaillée">
+            <img src="images/Reno/maison2.jfif" alt="Vue d'ensemble3">
+            </a>
+    </div>
+</div>
+    </section>
+
+    <!-- =============================================
+         NAVIGATION PROJETS
+    ============================================= -->
+    <section class="projet-navigation">
+        <div class="container">
+            <div class="nav-buttons">
+                <a href="projets.html" class="btn-secondary">← Retour aux projets</a>
+                <a href="mailto:info@construction4freres.com?subject=Commençons ensemble" class="btn-primary">Démarrer votre projet avec nous→</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+         FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Construction 4 Frères</h3>
+                    <p>L'expertise d'une famille, la qualité d'une entreprise.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="emplois.html">Carrières</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>438-401-5659</p>
+                    <p>150 Côte Saint-Nicolas</p>
+                    <p>St-Colombant, Qc</p>
+                    <p>J5K 1M2</p>
+                    <p>Email: <a href="mailto:info@construction4freres.com">info@construction4freres.com</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Construction 4 Frères. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Lightbox JS - AJOUTE CETTE LIGNE ↓ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+</html>
