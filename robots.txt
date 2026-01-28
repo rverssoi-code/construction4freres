@@ -1,0 +1,13 @@
+# Robots.txt pour Construction 4 Frères
+# https://construction4freres.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://construction4freres.com/sitemap.xml
+
+# Bloquer les répertoires non-publics (si applicable)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
