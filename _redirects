@@ -1,0 +1,33 @@
+# ==============================================
+# REDIRECTS POUR CONSTRUCTION 4 FRÈRES
+# Fichier: _redirects (Netlify)
+# ==============================================
+
+# FORCER HTTPS ET ENLEVER WWW
+http://construction4freres.com/* https://construction4freres.com/:splat 301!
+http://www.construction4freres.com/* https://construction4freres.com/:splat 301!
+https://www.construction4freres.com/* https://construction4freres.com/:splat 301!
+
+# REDIRIGER LES ANCIENNES URLS AVEC MAJUSCULES (404 FIXES)
+/Carrieres.html /emplois.html 301
+/NosRealisations.html /projets.html 301
+/NosServices.html /index.html#services 301
+/NousJoindre.html /index.html#contact 301
+
+# VARIATIONS POSSIBLES (au cas où)
+/carrieres.html /emplois.html 301
+/nos-realisations.html /projets.html 301
+/nos-services.html /index.html#services 301
+/nous-joindre.html /index.html#contact 301
+/services.html /index.html#services 301
+/contact.html /index.html#contact 301
+
+# GESTION DES TRAILING SLASHES
+/emplois /emplois.html 301
+/projets /projets.html 301
+/projet-detail /projet-detail.html 301
+/projet-detail2 /projet-detail2.html 301
+/projet-detail3 /projet-detail3.html 301
+
+# PAGE 404 PERSONNALISÉE (optionnel - à créer si besoin)
+/* /index.html 404

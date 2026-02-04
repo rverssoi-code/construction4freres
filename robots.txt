@@ -1,13 +1,20 @@
-# Robots.txt pour Construction 4 Frères
-# https://construction4freres.com
+# ==============================================
+# ROBOTS.TXT POUR CONSTRUCTION 4 FRÈRES
+# ==============================================
 
 User-agent: *
 Allow: /
 
-# Sitemap
+# SITEMAP
 Sitemap: https://construction4freres.com/sitemap.xml
 
-# Bloquer les répertoires non-publics (si applicable)
-Disallow: /admin/
-Disallow: /private/
-Disallow: /.git/
+# BLOQUER LES DOSSIERS INUTILES
+Disallow: /css/
+Disallow: /js/
+Disallow: /*.json$
+
+# PERMETTRE L'INDEXATION DES IMAGES
+Allow: /images/
+
+# CRAWL DELAY (OPTIONNEL)
+Crawl-delay: 1

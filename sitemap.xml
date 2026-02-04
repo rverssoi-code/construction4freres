@@ -1,50 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <!-- Page d'accueil -->
+  <!-- PAGE D'ACCUEIL -->
   <url>
     <loc>https://construction4freres.com/</loc>
-    <lastmod>2026-01-28</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
-  <!-- Page Projets -->
+  <!-- PAGE EMPLOIS (CARRIÈRES) -->
+  <url>
+    <loc>https://construction4freres.com/emplois.html</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- PAGE PROJETS (LISTE) -->
   <url>
     <loc>https://construction4freres.com/projets.html</loc>
-    <lastmod>2026-01-28</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
-  <!-- Détails Projets -->
+  <!-- PROJET DÉTAIL 1 - DAYTONA PIZZERIA -->
   <url>
     <loc>https://construction4freres.com/projet-detail.html</loc>
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
+  <!-- PROJET DÉTAIL 2 - RÉNOVATION RÉSIDENTIELLE -->
   <url>
     <loc>https://construction4freres.com/projet-detail2.html</loc>
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
+  <!-- PROJET DÉTAIL 3 - CONSTRUCTION COMMERCIALE -->
   <url>
     <loc>https://construction4freres.com/projet-detail3.html</loc>
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  
-  <!-- Page Emploi -->
-  <url>
-    <loc>https://construction4freres.com/emploi.html</loc>
-    <lastmod>2026-01-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   
 </urlset>
